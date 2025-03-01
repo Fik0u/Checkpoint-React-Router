@@ -1,6 +1,17 @@
 .card {
     margin: 10px;
     border-radius: 10px;
+    background-color: rgba(250, 236, 217, 0.644) !important;
+}
+.card button{
+    background-color: #8d7957;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.card button:hover{
+    background-color: #b7a27e;
 }
 
 .title{
@@ -12,5 +23,5 @@
 }
 
 .description{
-    height: 250px;
+    height: 200px;
 }

@@ -1,0 +1,15 @@
+.add button{
+    background-color: #7c7256;
+    color: black;
+    border: none;
+    cursor: pointer;
+    opacity: 0.9;
+    font-weight: 400;
+    margin: 30px 0;
+}
+
+.add button:hover {
+    background-color: rgb(165, 146, 121);
+    color: black;
+    opacity: 1;
+}

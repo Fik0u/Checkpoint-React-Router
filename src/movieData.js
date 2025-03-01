@@ -1,3 +1,4 @@
+// Array of objects that contains the data of the movies
 export const movieData = [
   {
     id: 1,

@@ -3,7 +3,7 @@ import { Card, Button } from 'react-bootstrap'
 import './movieCard.css'
 import FilterRate from '../filterRate/FilterRate'
 
-
+// MovieCard component that displays the movie card with the movie properties
 const MovieCard = ({movie}) => {
   // console.log(movie)
   return (
@@ -16,7 +16,7 @@ const MovieCard = ({movie}) => {
           {movie.description}
           <FilterRate isRating = {false} rate = {movie.rate}/>
         </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
+        <Button variant="primary">Details</Button>
       </Card.Body>
     </Card>
     </div>

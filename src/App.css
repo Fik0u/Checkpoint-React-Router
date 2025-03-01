@@ -1,5 +1,19 @@
 .App {
   text-align: center;
-  background-color: beige;
 }
 
+body{
+  margin: 0;
+  background-image: url('https://wallpapercat.com/w/full/1/a/f/1381070-3840x2160-desktop-4k-film-wallpaper-image.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.App h1{
+  color: rgb(51, 47, 47);
+  font-size: 2em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  margin-bottom: 20px;
+  padding-top: 20px;
+}

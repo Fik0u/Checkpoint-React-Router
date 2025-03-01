@@ -8,6 +8,7 @@ import FilterRate from './components/filterRate/FilterRate';
 
 
 function App() {
+// declaring our states
   const [movie, setMovie] = useState(movieData);
   const [searchTitle, setSearchTitle] = useState('');
   const [searchRate, setSearchRate] = useState(1);
@@ -19,8 +20,9 @@ function App() {
 }
   return (
     <div className="App">
-      <h1>Movie App</h1>
-      <FilterTitle searchTitle = {searchTitle} setSearchTitle = {setSearchTitle}/>
+      <h1>Moovy</h1>            
+{/* Calling the components */}
+      <FilterTitle searchTitle = {searchTitle} setSearchTitle = {setSearchTitle}/> 
       <FilterRate searchRate = {searchRate} setSearchRate = {setSearchRate} isRating = {true} />
       <AddMovie movieAdd = {movieAdd}/>
       <MovieList movie = {movie} searchTitle = {searchTitle} searchRate = {searchRate}/>
