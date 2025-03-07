@@ -18,17 +18,19 @@ const Description = () => {
     const navigate = useNavigate()
 
   return (
-    <div className='container' style={{marginTop:'50px', textAlign: 'center'}}>
-      <h1> {movie.title} </h1>
+    <>
+    <div className='container' style={{marginTop:'15%', textAlign: 'center'}}>
+      {/* <h1> {movie.title} </h1> */}
       <Card
           title= {movie.title}
           variant="borderless"
-          style={{width: 600, margin: 'auto', marginTop: 50, textAlign: 'center', backgroundColor: 'beige'}}>
+          style={{width: 600, margin: 'auto', textAlign: 'center', fontWeight: 400, fontSize: '1rem', backgroundColor: '#ebdec6db'}}>
           {/* <img src={movie.posterUrl} alt={movie.title} style={{width: 400, height: 500, marginBottom:'30px'}}/> */}
         <p>{movie.description}</p>
       </Card>
-      <Button onClick={() => navigate('/')} style={{marginTop:'50px'}}>Go Back</Button>
+      <Button onClick={() => navigate('/')} style={{marginTop:'70px', backgroundColor:'#b7a27e', border: 'none'}}>Go Back</Button>
     </div>
+    </>
   )
 }
 

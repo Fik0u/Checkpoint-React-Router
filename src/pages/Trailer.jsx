@@ -17,12 +17,12 @@ const Trailer = () => {
     const navigate = useNavigate()
   return (
     <>
-      <h1 style={{textAlign:'center', margin: '30px'}}> {movie.title} </h1>
+      <h1 style={{textAlign:'center', margin: '30px', color:'beige'}}> {movie.title} </h1>
     <div className='container' style={{margin: 'auto', marginTop:'40px', textAlign: 'center'}}>
       
         <div className="trailer"> <iframe src = {movie.trailer} title = {movie.title} style={{width:'800px', height:'400px', borderRadius: '5px'}} ></iframe></div>
       
-        <Button onClick={() => navigate('/')} style={{marginTop:'50px'}}>Go Back</Button>
+        <Button onClick={() => navigate('/')} style={{marginTop:'70px', backgroundColor:'#b7a27e', border: 'none'}}>Go Back</Button>
     </div>
     </>
   )

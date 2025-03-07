@@ -13,12 +13,11 @@ const MovieCard = ({movie}) => {
       <Card.Img className='poster' variant="top" src= {movie.posterUrl} />
       <Card.Body>
         <Card.Title className='title'>{movie.title}</Card.Title>
-        <Card.Text className='description'>
-          {movie.description}
+        <Card.Text>
           <FilterRate isRating = {false} rate = {movie.rate}/>
         </Card.Text>
 
-        <div className="btn" style={{display: 'flex', justifyContent: 'space-around'}}>
+        <div className="btn" style={{display: 'flex', justifyContent: 'space-around', marginTop: '40px'}}>
 
         <Link to = {`/description/${movie.id}`}>
           <Button variant="primary">Details</Button>
