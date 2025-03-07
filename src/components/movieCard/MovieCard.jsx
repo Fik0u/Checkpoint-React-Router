@@ -2,6 +2,7 @@ import React from 'react'
 import { Card, Button } from 'react-bootstrap'
 import './movieCard.css'
 import FilterRate from '../filterRate/FilterRate'
+import { Link } from 'react-router-dom'
 
 // MovieCard component that displays the movie card with the movie properties
 const MovieCard = ({movie}) => {
@@ -16,7 +17,18 @@ const MovieCard = ({movie}) => {
           {movie.description}
           <FilterRate isRating = {false} rate = {movie.rate}/>
         </Card.Text>
-        <Button variant="primary">Details</Button>
+
+        <div className="btn" style={{display: 'flex', justifyContent: 'space-around'}}>
+
+        <Link to = {`/description/${movie.id}`}>
+          <Button variant="primary">Details</Button>
+        </Link>
+        
+        <Link to = {`/trailer/${movie.id}`}>
+          <Button variant="primary">Trailer</Button>
+        </Link>
+
+        </div>
       </Card.Body>
     </Card>
     </div>

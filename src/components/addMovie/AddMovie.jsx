@@ -12,18 +12,18 @@ const AddMovie = ({movieAdd}) => {
 const [title, setTitle] = useState('');
 const [description, setDescription] = useState('');
 const [rate, setRate] = useState('');
-const [poster, setPoster] = useState('');
+const [posterUrl, setPosterUrl] = useState('');
 
 // The handleAdd function is used to add a new movie to the list of movies. It generates a random id for the new movie and creates a new movie object with the title, description, rate, and poster URL entered by the user. The movieAdd function is then called with the new movie object as an argument to add the movie to the list of movies. The form fields are then reset to empty strings and the modal is closed.
 const handleAdd = () => {
     const id = Math.random();
-    const newMovie = {id, title, description, rate, poster};
+    const newMovie = {id, title, description, rate, posterUrl};
     movieAdd(newMovie);
     handleClose();
     setTitle('');
     setDescription('');
     setRate('');
-    setPoster('');
+    setPosterUrl('');
 };
 
 
@@ -52,7 +52,7 @@ const handleAdd = () => {
             </Form.Group>
             <Form.Group className="mb-3">
                 <Form.Label>Poster</Form.Label>
-                <Form.Control type="text" placeholder="Enter poster URL" value = {poster} onChange = {(e) => setPoster(e.target.value)}/>
+                <Form.Control type="text" placeholder="Enter poster URL" value = {posterUrl} onChange = {(e) => setPosterUrl(e.target.value)}/>
             </Form.Group>
         </Modal.Body>
         <Modal.Footer>
